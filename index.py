@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         self.button_folder_destination.clicked.connect(lambda: proc.choose_directory_to_copie(self))
         self.button_scann.clicked.connect(lambda: proc.copy_media_files_with_min_size(self))
 
-
+test
 
 
 
