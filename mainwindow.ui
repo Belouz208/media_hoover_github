@@ -14,108 +14,23 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="button_folder_scan">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>60</y>
-      <width>200</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Repertoire a scaner</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_folder_destination">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>160</y>
-      <width>200</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Destination </string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_folder_scan">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>60</y>
-      <width>401</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Choose The Source Folder</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_folder_destination">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>160</y>
-      <width>401</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Choose The Target label Folder</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="champ_minimal_file_size">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>240</y>
-      <width>113</width>
-      <height>41</height>
+      <x>10</x>
+      <y>270</y>
+      <width>201</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="text">
      <string>50</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_tailml_minimal">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>240</y>
-      <width>200</width>
-      <height>50</height>
-     </rect>
+    <property name="frame">
+     <bool>true</bool>
     </property>
-    <property name="text">
-     <string>Taill min De fichier </string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_scann">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>370</y>
-      <width>121</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Scann And Copie</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_annuler">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>370</y>
-      <width>121</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Annuler</string>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="button_folder_scan_4">
@@ -131,60 +46,200 @@
      <string>Repertoire a scaner</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_tailml_minimal_2">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>240</y>
-      <width>41</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ko</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_msg_err_size">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>290</y>
-      <width>171</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_reset">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>370</y>
-      <width>121</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Reset</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_statu">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>440</y>
+      <x>11</x>
+      <y>318</y>
       <width>201</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>La Valeur Saisie n'est pas valide </string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>491</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button_scann">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Serif&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Scan and Copie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="button_reset">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Serif&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="button_annuler">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Serif&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Annuler</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>491</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button_folder_scan">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Serif&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Folder To Scan</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_folder_scan">
+       <property name="minimumSize">
+        <size>
+         <width>280</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Choose Source Folder</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>491</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button_folder_destination">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Serif&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Folder Destinitation </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_folder_destination">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Choose Target Folder</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>202</y>
+      <width>511</width>
       <height>51</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Aucun Téléchargement En Cours</string>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
+    <widget class="QLabel" name="label_tailml_minimal">
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Serif&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>File Minimal Size</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_statu">
+     <property name="text">
+      <string>Aucun Téléchargement En Cours</string>
+     </property>
+    </widget>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
