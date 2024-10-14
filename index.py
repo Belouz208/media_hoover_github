@@ -11,13 +11,17 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         uic.loadUi("mainwindow.ui", self)  # Charger l'interface
-        self.champ_minimal_file_size = self.findChild(QLineEdit, "champ_minimal_file_size")
 
+        #self.champ_minimal_file_size = self.findChild(QLineEdit, "champ_minimal_file_size")
         self.button_folder_scan.clicked.connect(lambda: proc.choose_directory_to_scan(self))
         self.button_folder_destination.clicked.connect(lambda: proc.choose_directory_to_copie(self))
-        self.button_scann.clicked.connect(lambda: proc.copy_media_files_with_min_size(self))
+        self.button_scann.clicked.connect(lambda: proc.copy_files_threaded(self))
+        self.button_reset.clicked.connect(lambda: proc.reset_tout(self))
+        self.button_annuler.clicked.connect(lambda: proc.stop_or_exit(self))
 
-test
+
+
+
 
 
 

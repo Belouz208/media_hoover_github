@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>518</width>
-    <height>409</height>
+    <height>579</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,27 +43,27 @@
    <widget class="QLabel" name="label_folder_scan">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>290</x>
       <y>60</y>
       <width>401</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>No Directory chosen</string>
+     <string>Choose The Source Folder</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_folder_destination">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>290</x>
       <y>160</y>
       <width>401</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>No Directory Chosen</string>
+     <string>Choose The Target label Folder</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="champ_minimal_file_size">
@@ -95,9 +95,9 @@
    <widget class="QPushButton" name="button_scann">
     <property name="geometry">
      <rect>
-      <x>39</x>
-      <y>320</y>
-      <width>201</width>
+      <x>30</x>
+      <y>370</y>
+      <width>121</width>
       <height>51</height>
      </rect>
     </property>
@@ -105,12 +105,12 @@
      <string>Scann And Copie</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_Annuler">
+   <widget class="QPushButton" name="button_annuler">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>320</y>
-      <width>200</width>
+      <x>310</x>
+      <y>370</y>
+      <width>121</width>
       <height>50</height>
      </rect>
     </property>
@@ -142,6 +142,45 @@
     </property>
     <property name="text">
      <string>Ko</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_msg_err_size">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>290</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_reset">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>370</y>
+      <width>121</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_statu">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>440</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aucun Téléchargement En Cours</string>
     </property>
    </widget>
   </widget>

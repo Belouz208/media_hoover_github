@@ -26,7 +26,6 @@ def reset_tout(parent):
     parent.label_folder_scan.setStyleSheet("color: red;")
     parent.label_folder_destination.setText("Aucun répertoire sélectionné")
     parent.label_folder_destination.setStyleSheet("color: red;")
-    parent.label_statu.setText ("Aucun Téléchargment En cours")
     if hasattr(parent, 'champ_minimal_file_size'):
         parent.champ_minimal_file_size.setText("300")
 
